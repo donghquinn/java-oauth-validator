@@ -28,7 +28,7 @@ public class JwtAuthFilter extends OncePerRequestFilter { // OncePerRequestFilte
         String[] excludePath = {
                 "/webjars",
                 "/swagger-ui.html", "/v3/api-docs", "/swagger-ui", "/swagger-resources", "/swagger-ui/index.html",
-                "/api/v1/user/signon",
+                "/api/v1/telegram/validator",
         };
         String path = request.getRequestURI();
 
