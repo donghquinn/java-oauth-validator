@@ -1,0 +1,26 @@
+services:
+  app:
+    image: "sjc.vultrcr.com/dongregistry/oauth-validator:latest"
+    container_name: oauth-validator
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 2G
+        reservations:
+          cpus: "0.25"
+          memory: 100M
+    env_file:
+      - .env
+    expose:
+      - 9482
+    volumes:
+      - ./logs:/home/node/logs
+      - ./.env:/home/node/.env
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
