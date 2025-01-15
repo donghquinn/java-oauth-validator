@@ -12,3 +12,12 @@
 ## Dependencies
 * nano id generator
   * https://github.com/wosherco/jnanoid-enhanced
+
+## Infrastructures
+
+### CI/CD
+* Jenkins
+  * Set your Server Info and Github Webhook
+
+### Docker
+* Build Program by Dockerfile and run via docker compose
