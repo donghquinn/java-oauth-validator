@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RequestMapping("api/v1/telegram")
 @Tag(name = "OAUTH-Controller", description = "Oauth Validating Controller")
-public class MemberController {
+public class UserController {
     private final UserService userService;
 
     @PostMapping("/validator")
