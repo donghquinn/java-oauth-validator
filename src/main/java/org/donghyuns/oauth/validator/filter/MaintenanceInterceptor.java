@@ -15,8 +15,11 @@ import org.springframework.web.servlet.HandlerInterceptor;
 @Component
 public class MaintenanceInterceptor implements HandlerInterceptor {
 
-  @Autowired
-  private MaintenanceModeManager maintenanceModeManager;
+  private final MaintenanceModeManager maintenanceModeManager;
+
+  public MaintenanceInterceptor(MaintenanceModeManager maintenanceModeManager) {
+    this.maintenanceModeManager = maintenanceModeManager;
+  }
 
   @Override
   public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
