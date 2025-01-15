@@ -5,7 +5,7 @@ import jakarta.validation.constraints.Min;
 import lombok.Data;
 
 @Data
-public class CommonListReq {
+public class CommonListRequest {
     @Min(10)
     @Max(100)
     int ListSize = 10;

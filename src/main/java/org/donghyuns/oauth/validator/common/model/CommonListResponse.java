@@ -7,7 +7,7 @@ import lombok.experimental.SuperBuilder;
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
-public class CommonListRes {
+public class CommonListResponse {
   int currentPage;
   int total;
   int currentCount;
