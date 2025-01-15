@@ -1,5 +1,8 @@
 # Oauth Validator
 
+## Words
+* You can bring only AuthDataValidator for Telegram Validation from util package
+
 ## Provides
 
 ### Telegram
